@@ -1,0 +1,67 @@
+html,
+body,
+#root {
+  height: auto;
+  margin: 0;
+  font-family: poppins, sans-serif;
+}
+
+.top-bar {
+  background-color: #1d428a;
+  height: 16px;
+}
+
+.card {
+  overflow: hidden;
+  /* ⛔️ prevents image from spilling outside */
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+  /* 🔍 zoom effect */
+  cursor: pointer;
+  /* 🖱️ pointer on hover */
+}
+
+
+.nav-link.active {
+  border-bottom: 2px solid #0d6efd;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title {
+  cursor: pointer;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+}
+
+.card-title:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.card-title:focus-visible {
+  outline: none;
+  text-decoration: underline;
+}
+
+.card-title:focus:not(:focus-visible) {
+  outline: none;
+  text-decoration: none;
+}
+
+.card-title:active {
+  text-decoration: underline;
+}
