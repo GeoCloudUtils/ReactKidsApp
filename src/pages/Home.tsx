@@ -6,23 +6,14 @@ import { SectionInner } from "../components/SectionInner";
 import { Section } from "../components/Section";
 import { FunAndLearningSection } from "../components/FunAndLearningSection";
 import { Reviews } from "../components/Reviews";
-
+import { Link } from "react-router-dom";
 import coverImage from "../assets/cover-image.png";
 import bluey from "../assets/1.jpg";
 import peppa from "../assets/2.jpg";
-import thomas from "../assets/3.jpg";
-import sesame from "../assets/4.jpg";
 import innerImage from "../assets/5.jpg";
 import dadImage from "../assets/dad_and_daughter_playing-scaled-1100x600.jpg";
 
 export function Home() {
-  const apps = [
-    { title: "LEGO® Bluey™", imageSrc: bluey },
-    { title: "LEGO® DUPLO® PEPPA PIG", imageSrc: peppa },
-    { title: "Thomas & Friends™: Let’s Roll", imageSrc: thomas },
-    { title: "Sesame Street Mecha Builders", imageSrc: sesame },
-  ];
-
   return (
     <>
       <Cover imageSrc={coverImage} />
@@ -30,7 +21,7 @@ export function Home() {
         title="Apps to help your child learn, play, and grow"
         description="They’ll have fun with characters they love, and you’ll rest easy knowing all our apps nurture their curiosity and creativity. Start having fun now with our top picks."
       />
-      <AppGallery apps={apps} />
+      <AppGallery />
       <SectionInner imageSrc={innerImage} />
       <Section>
         <section className="container-fluid py-5">
@@ -49,12 +40,12 @@ export function Home() {
         title="Children are constantly learning from the world around them, including their digital environment"
         description="We responsibly design our apps so your child gets to enjoy the fun of screen time while also developing healthy digital habits at a young age."
       />
-      <a
-        href=""
+      <Link
+        to="/about"
         className="text-center mx-auto d-block mb-5 text-danger font-weight-bold tex fs-3"
       >
         Learn more about how we design our apps
-      </a>
+      </Link>
       <FunAndLearningSection image1={peppa} image2={bluey} />
       <Section>
         <div className="row">

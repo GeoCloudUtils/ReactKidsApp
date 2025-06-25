@@ -1,22 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { appList, type AppCard } from "../appList";
 
-interface AppCard {
-  title: string;
-  imageSrc: string;
-  alt?: string;
-}
+export function AppGallery(): React.ReactElement {
+  const navigate = useNavigate();
 
-interface AppGalleryProps {
-  apps: AppCard[];
-}
+  const handleCardClick = (id: string) => {
+    navigate(`/apps/${id}`);
+  };
 
-export function AppGallery({ apps }: AppGalleryProps): React.ReactElement {
   return (
     <section className="w-100">
       <div className="container-fluid px-4">
         <div className="row g-4">
-          {apps.map((app, index) => (
-            <div key={index} className="col-6 col-sm-6 col-md-3 fade-in">
+          {appList.map((app: AppCard) => (
+            <div
+              key={app.id}
+              className="col-6 col-sm-6 col-md-3 fade-in"
+              onClick={() => handleCardClick(app.id)}
+              style={{ cursor: "pointer" }}
+            >
               <div className="card h-100">
                 <img
                   src={app.imageSrc}
@@ -30,8 +33,13 @@ export function AppGallery({ apps }: AppGalleryProps): React.ReactElement {
             </div>
           ))}
         </div>
+
         <div className="text-center mt-4 mb-5">
-          <button type="button" className="btn btn-dark btn-lg">
+          <button
+            type="button"
+            className="btn btn-dark btn-lg"
+            onClick={() => navigate("/apps")}
+          >
             See all of our apps
           </button>
         </div>
