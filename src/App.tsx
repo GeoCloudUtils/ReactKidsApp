@@ -14,11 +14,13 @@ import { Apps } from "./pages/Apps";
 import AppDetailPage from "./pages/AppDetailPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
 
-import { Home } from "./pages/Home"; // ✅ New: we’ll create this next
+import { Home } from "./pages/Home";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <TopBar />
       <Navbar />
 
