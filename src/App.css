@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'Pribambas';
+  src: url('./assets/fonts/Pribambas-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body,
 #root {
   height: auto;
   margin: 0;
-  font-family: poppins, sans-serif;
+  font-family: 'Pribambas', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .top-bar {

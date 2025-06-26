@@ -3,13 +3,13 @@ import type { ReactElement } from "react";
 
 export function Navbar(): ReactElement {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top px-3 px-md-5">
+    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top px-4 px-md-5">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
           <img
             src="/logo.png"
             alt="Logo"
-            height="30"
+            height="100"
             className="d-inline-block align-text-top me-2"
           />
         </NavLink>
@@ -27,7 +27,7 @@ export function Navbar(): ReactElement {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto fs-2">
             <li className="nav-item">
               <NavLink
                 to="/"
