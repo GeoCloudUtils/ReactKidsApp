@@ -11,6 +11,7 @@ import { About } from "./pages/About";
 import { Blog } from "./pages/Blog";
 import { Contact } from "./pages/Contact";
 import { Apps } from "./pages/Apps";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AppDetailPage from "./pages/AppDetailPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/apps/:id" element={<AppDetailPage />} />{" "}
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetailPage />} /> {/* ✅ NEW */}
+        <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route
           path="*"
           element={<h2 className="text-center my-5">Page Not Found</h2>}

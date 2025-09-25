@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 export function Footer(): React.ReactElement {
   return (
@@ -7,21 +7,21 @@ export function Footer(): React.ReactElement {
         <div className="row align-items-center text-center text-md-start">
           {/* Links Column */}
           <div className="col-md-4 mb-3 mb-md-0">
-            <a href="#" className="text-white me-2">
+            <Link to="/privacy" className="text-white me-2">
               Privacy
-            </a>{" "}
+            </Link>{" "}
             |
-            <a href="#" className="text-white mx-2">
+            <Link to="/terms" className="text-white mx-2">
               Terms
-            </a>{" "}
+            </Link>{" "}
             |
-            <a href="#" className="text-white mx-2">
+            <Link to="/cookies" className="text-white mx-2">
               Cookies
-            </a>{" "}
+            </Link>{" "}
             |
-            <a href="#" className="text-white ms-2">
+            <Link to="/contact" className="text-white ms-2">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Social & Info Column */}
