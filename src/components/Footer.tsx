@@ -27,9 +27,9 @@ export function Footer(): React.ReactElement {
           {/* Social & Info Column */}
           <div className="col-md-4 mb-3 mb-md-0 text-center">
             <div className="mt-2 small">
-              © StoryToys
+              © EduKids 2025 All rights reserved.
               <br />
-              Developed by WP Web Design
+              Developed by EduKids Team.
             </div>
           </div>
         </div>
