@@ -1,9 +1,9 @@
 export function TopBar(): React.ReactElement {
   return (
-    <div className="top-bar">
+    <div className="top-bar bg-primary text-white">
       <div className="container">
         <div className="row">
-          <div className="col-md-6"></div> {/* Empty column for spacing */}
+          <div className="col-md-6"></div> {/* Left empty for spacing */}
           <div className="col-md-6 text-md-end text-center">
             <span className="me-3">
               <i className="fa fa-phone me-2"></i>+123 456 7890
