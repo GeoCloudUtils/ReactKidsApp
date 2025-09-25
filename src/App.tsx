@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/600.css"; // optional weights
 
 import { TopBar } from "./components/TopBar";
 import { Navbar } from "./components/Navbar";
