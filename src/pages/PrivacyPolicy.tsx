@@ -38,7 +38,7 @@ export default function PrivacyPolicy({
 
           {/* Quick nav */}
           <nav className="mb-4">
-            <ul className="list-inline small mb-0">
+            <ul className="list-group mb-0">
               {[
                 ["controller", "Who we are"],
                 ["data", "What data we collect"],
