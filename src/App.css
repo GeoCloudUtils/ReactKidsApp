@@ -11,7 +11,7 @@ body,
   height: auto;
   margin: 0;
   font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 
