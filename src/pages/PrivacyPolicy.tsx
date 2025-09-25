@@ -6,28 +6,14 @@ export type PrivacyPolicyProps = {
   email?: string;
   phone?: string;
   dpoEmail?: string;
-  lastUpdated?: string; // e.g. "2025-09-25"
-  analyticsProvider?: string; // e.g. "Google Analytics 4"
+  lastUpdated?: string;
+  analyticsProvider?: string;
 };
 
-/**
- * GDPR‑ready Privacy Policy component for EduKids / Editura EDU.
- *
- * Usage:
- * <PrivacyPolicy
- *   companyName="EduKids / Editura EDU"
- *   address="Str. Exemplu 123, București, România"
- *   email="info@edukids.com"
- *   phone="+123 456 7890"
- *   dpoEmail="dpo@edukids.com"
- *   lastUpdated="2025-09-25"
- *   analyticsProvider="Google Analytics 4"
- * />
- */
 export default function PrivacyPolicy({
-  companyName = "EduKids / Editura EDU",
+  companyName = "4Kids",
   address = "{{Company Address}}",
-  email = "info@edukids.com",
+  email = "info@4Kids.com",
   phone = "+123 456 7890",
   dpoEmail = "{{DPO Email}}",
   lastUpdated = "{{DATE}}",
@@ -339,8 +325,7 @@ export default function PrivacyPolicy({
             <h3 className="h6">Quick summary (plain language)</h3>
             <ul className="mb-0">
               <li>
-                We collect only what we need to run EduKids and support
-                learning.
+                We collect only what we need to run 4Kids and support learning.
               </li>
               <li>
                 Parents/guardians or schools must consent for children where
